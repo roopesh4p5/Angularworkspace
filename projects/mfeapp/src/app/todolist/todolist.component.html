@@ -1,0 +1,10 @@
+<div class="show-grid">
+  <div *ngFor="let show of shows" class="show-card">
+    <img [src]="show.imageUrl" [alt]="show.title" class="show-card__image">
+    <div class="show-card__content">
+      <h3 class="show-card__title">{{ show.title }}</h3>
+      <p class="show-card__type">{{ show.type }}</p>
+      <p class="show-card__description">{{ show.description }}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+.show-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.show-card {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 4px;
+
+  &__image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  &__content {
+    padding: 20px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__type {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    color: #333;
+  }
+}

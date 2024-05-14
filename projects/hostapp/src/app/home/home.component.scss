@@ -1,0 +1,54 @@
+
+
+// product-card.component.scss
+
+.product-card {
+  margin: 30px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  &__content {
+    padding: 16px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  &__description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 16px;
+  }
+
+  &__price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #b12704;
+  }
+
+  &__button {
+    display: inline-block;
+    background-color: #ff9900;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #ff8f00;
+    }
+  }
+}
